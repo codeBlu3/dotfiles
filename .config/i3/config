@@ -206,4 +206,6 @@ exec compton  --config ~/.config/compton/compton.conf
 exec "setxkbmap -option 'caps:swapescape, ctrl:ralt_rctrl, ctrl:rctrl_ralt'
 exec xrdb .Xresources
 #exec_always polybar bar1 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+
+exec_always --no-startup-id ~/.config/polybar/launch.sh
