@@ -106,4 +106,6 @@ source $ZSH/oh-my-zsh.sh
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+#alias tmux attach -t $var  || tmux new -s $var
+
 

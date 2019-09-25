@@ -10,6 +10,10 @@
   window_state = hidden
 [keybindings]
   broadcast_group = Down
+  move_tab_left = <Primary><Shift>less
+  move_tab_right = <Primary><Shift>greater
+  next_tab = <Primary><Shift>k
+  prev_tab = <Primary><Shift>j
   switch_to_tab_1 = <Primary>1
   switch_to_tab_10 = <Primary>0
   switch_to_tab_2 = <Primary>2
