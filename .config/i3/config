@@ -55,10 +55,16 @@ bindsym $mod+Shift+f exec firefox-developer-edition
 bindsym $mod+m exec pkill compton
 bindsym $mod+Shift+m exec compton  --config ~/.config/compton/compton.conf
 bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
+bindsym --release $mod+p exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && ls -1dt ~/Pictures/screenshots/* | head -1 | xclip -selection clipboard' # All screensh
+bindsym --release $mod+Shift+p exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && ls -1dt ~/Pictures/screenshots/* | head -1 | xclip -selection clipboard' # All screensh
+#bindsym --release $mod+p exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
 #add scrot -u, only the focused window 
-
 # kill focused window
+
+
+
+
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)

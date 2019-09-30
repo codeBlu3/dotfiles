@@ -70,6 +70,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
 	vi-mode
+	docker
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -107,5 +108,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 #alias tmux attach -t $var  || tmux new -s $var
-
-
+#read github for good docker aliases
+alias dnmap='docker run --rm nmap'
+alias dwpscan='docker run --rm nmap'
+alias dipython=' docker run -it --mount src="$(pwd)",target=/home,type=bind codeblu3/pentesttools /bin/sh'
