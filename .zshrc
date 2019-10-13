@@ -111,4 +111,5 @@ alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 #read github for good docker aliases
 alias dnmap='docker run --rm nmap'
 alias dwpscan='docker run --rm nmap'
-alias dipython=' docker run -it --mount src="$(pwd)",target=/home,type=bind codeblu3/pentesttools /bin/sh'
+alias dipython='docker run -it --mount src="$(pwd)",target=/home,type=bind codeblu3/pentesttools /bin/sh'
+alias dpython=' docker run -it --mount src="$(pwd)",target=/home,type=bind codeblu3/pentesttools'
