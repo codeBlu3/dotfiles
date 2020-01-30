@@ -106,10 +106,4 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
-#alias tmux attach -t $var  || tmux new -s $var
-#read github for good docker aliases
-alias dnmap='docker run --rm nmap'
-alias dwpscan='docker run --rm nmap'
-alias dipython='docker run -it --mount src="$(pwd)",target=/home,type=bind codeblu3/pentesttools /bin/sh'
-alias dpython=' docker run -it --mount src="$(pwd)",target=/home,type=bind codeblu3/pentesttools'
+source $HOME/.aliases
